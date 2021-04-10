@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/rightBtn"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="60dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#11B6A3"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="@+id/downBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upBtn"
+        app:layout_constraintVertical_bias="0.518"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/leftBtn"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="100dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#11B6A3"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/downBtn"
+        app:layout_constraintEnd_toStartOf="@+id/rightBtn"
+        app:layout_constraintTop_toTopOf="@+id/upBtn"
+        app:layout_constraintVertical_bias="0.519"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/upBtn"
+        android:layout_width="104dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="472dp"
+        android:layout_marginTop="60dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#11B6A3"
+        android:rotationX="-181"
+        app:layout_constraintEnd_toStartOf="@+id/rightBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/downBtn"
+        android:layout_width="104dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="472dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#11B6A3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upBtn"
+        app:layout_constraintVertical_bias="0.697"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <Button
+        android:id="@+id/fireBtn"
+        android:layout_width="132dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="60dp"
+        android:background="#11B6A3"
+        android:drawableTint="#FFFFFF"
+        android:text="Fire"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/leftBtn"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
